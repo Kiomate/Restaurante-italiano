@@ -241,6 +241,10 @@
           font-size: 0.95em;
         }
       }
+      /* For all p inside .factura, set color white */
+      .factura p {
+        color: #fff !important;
+      }
     </style>
   </head>
   <body>
@@ -592,12 +596,12 @@
 
       function confirmarPedido() {
         document.getElementById("resultado").innerHTML = `
-          <div class="factura">
-            <div class="factura-titulo">¡Pedido confirmado!</div>
-            <p style="text-align:center;">Tu pedido estará listo en aproximadamente <b>20 minutos</b>.</p>
-            <p style="color:#fdbb2d;font-weight:700;text-align:center;">¡Gracias por tu compra!</p>
-          </div>
-        `;
+    <div class="factura">
+      <div class="factura-titulo">¡Pedido confirmado!</div>
+      <p>Tu pedido estará listo en aproximadamente <b>20 minutos</b>.</p>
+      <p style="color:#ebd86f;font-weight:700;text-align:center;">¡Gracias por tu compra!</p>
+    </div>
+  `;
       }
     </script>
   </body>
